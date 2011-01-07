@@ -29,10 +29,10 @@ git add miarchivo
 #Agrega los archivos modificados para ser enviados en commits separados (patch staging) 
 git add -p                                                 
 
-#Muestra los archivos                                                                   
+#Muestra los archivos agregados por "git add"                                                              
 git ls-files --cache                                       
 
-#
+#Muestra los archivos en "stage"
 git ls-files --stage                                       
 
 #Muestra el estado de las modificaciones                                                                                                                                        
