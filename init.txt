@@ -11,27 +11,67 @@ h1. Primeros pasos con GIT y Rails
 
 *Create a new project*
 <pre><code>
-rails myproject                                            Crea el proyecto en Rails                                                                                 
-cd myproject                                               Obvio                                                                                    
-git init                                                   Inicializa el proyecto                                                                 
-git add .                                                  Agrega todos los archivos al proyecto                                                      
-git add miarchivo                                          Agrega el archivo _miarchivo_ para el proximo commit (stage)                           
-git add -p                                                 Agrega los archivos modificados para ser enviados en commits separados (patch staging) 
-git ls-files --cache                                       Muestra los archivos                                                                   
-git ls-files --stage                                       1                                                                                          
-git status                                                 Muestra el estado de las modificaciones                                                
-git commit                                                 Envia al repositorio GIT los archivos anadidos con @git add@                           
-git commit -a                                              Hace commit de todo (asi no se hayan agregado por @git add .@)                              
-git commit -m "just a description"                         Hace commit de todo lo que está _staged_ junto con una descripción de los cambios           
-git remote add origin git@github.com:joserojas/GitDoc.git  Conecta el repositorio local con el repositorio remoto                                 
+#Crea el proyecto en Rails                                                                                 
+rails myproject                                            
+
+#Cambiarse de carpeta
+cd myproject         
+
+#Inicializa el proyecto                                                                 
+git init             
+
+#Agrega todos los archivos al proyecto                                                      
+git add .                                                  
+
+#Agrega el archivo _miarchivo_ para el proximo commit (stage)                           
+git add miarchivo                                          
+
+#Agrega los archivos modificados para ser enviados en commits separados (patch staging) 
+git add -p                                                 
+
+#Muestra los archivos                                                                   
+git ls-files --cache                                       
+
+#
+git ls-files --stage                                       
+
+#Muestra el estado de las modificaciones                                                                                                                                        
+git status                                                 
+
+#Envia al repositorio GIT los archivos anadidos con @git add@                           
+git commit                                                 
+
+#Hace commit de todo (asi no se hayan agregado por @git add .@)                              
+git commit -a                                              
+
+#Hace commit de todo lo que está _staged_ junto con una descripción de los cambios           
+git commit -m "just a description"                         
+
+#Conecta el repositorio local con el repositorio remoto                                 
+git remote add origin git@github.com:joserojas/GitDoc.git  
+
+#Ver cambios realizados en el repositorio
 git log                                                    1  
-git log --oneline                                          Listado de los cambios en 1 linea                                                                                    
-git diff                                                   Ver la diferencia entre los archivos actuales y su version anterior                    
-find .git/                                                 1                                                                                      
-git clone git://github.com/schacon/ticgit.git@             1                                                                                      
-git clone http://git.gitorius.org/kipling/mainline.git@    1                                                                                      
----
+
+#Listado de los cambios en 1 linea                                                                                    
+git log --oneline                                          
+
+#Ver la diferencia entre los archivos actuales y su version anterior                    
+git diff 
+
+#Ver cambios en git
+find .git/         
+
+#Clonar un repositorio remoto
+git clone git://github.com/schacon/ticgit.git@           
+
+#Clonar un repositorio remoto usando http                                                                                      
+git clone http://git.gitorius.org/kipling/mainline.git@                                                                                         
+
+#
 git remote
+
+#
 git remote -v
 
 
@@ -40,5 +80,4 @@ git remote -v
 * "Textile":http://en.wikipedia.org/wiki/Textile_(markup_language)
 * "Linux SSH Key Setup":http://help.github.com/linux-key-setup/
 * "Troubleshooting SSH":http://help.github.com/troubleshooting-ssh/
-* "":
 
